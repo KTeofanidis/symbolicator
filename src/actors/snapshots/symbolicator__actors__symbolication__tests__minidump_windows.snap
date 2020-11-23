@@ -1,6 +1,6 @@
 ---
 source: src/actors/symbolication.rs
-expression: response
+expression: response.await.unwrap()
 ---
 status: completed
 timestamp: 1521713273
@@ -154,7 +154,7 @@ stacktraces:
         trust: context
 modules:
   - debug_status: found
-    unwind_status: found
+    unwind_status: unused
     features:
       has_debug_info: true
       has_unwind_info: true
